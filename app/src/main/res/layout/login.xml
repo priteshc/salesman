@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+
+    >
+
+
+
+    <ImageView
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/aqu"
+        android:background="@null"
+        android:layout_marginTop="100dp"
+        />
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/cname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+        <com.example.dec.mylocation.customfonts.MavenProEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/cpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+        <com.example.dec.mylocation.customfonts.MavenProEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <com.example.dec.mylocation.customfonts.MavenProButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LogIn"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonselector1"
+         android:id="@+id/log"
+        />
+
+
+
+</LinearLayout>

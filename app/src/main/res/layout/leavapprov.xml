@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/DeepSkyBlue"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Reporting manger "
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="22dp" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        >
+
+
+    <LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            >
+
+    <com.example.dec.mylocation.customfonts.MavenProTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request from  :"
+        android:gravity="left"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tim"
+        android:textColor="@drawable/press1"
+        android:textSize="18sp"
+        android:layout_weight="1.2"
+        android:layout_marginTop="10dp"
+        />
+
+            <com.example.dec.mylocation.customfonts.MavenProTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Request from :"
+                android:gravity="left"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/name"
+                android:layout_weight="0.8"
+                android:textColor="@drawable/press1"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+
+            <com.example.dec.mylocation.customfonts.MavenProTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Leave Type  :"
+                android:gravity="left"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/leave"
+                android:textColor="@drawable/press1"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                />
+
+            <com.example.dec.mylocation.customfonts.MavenProTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Request from :"
+                android:gravity="left"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/leavetype"
+                android:layout_weight="0.8"
+                android:textColor="@drawable/press1"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+
+            <com.example.dec.mylocation.customfonts.MavenProTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reason    :"
+                android:gravity="left"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/res"
+                android:textColor="@drawable/press1"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                />
+
+            <com.example.dec.mylocation.customfonts.MavenProTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Request from :"
+                android:gravity="left"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/reeson"
+                android:layout_weight="0.8"
+                android:textColor="@drawable/press1"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            >
+
+    <com.example.dec.mylocation.customfonts.MavenProButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Approve"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonselector1"
+         android:id="@+id/approve"
+        android:layout_weight="1"
+        />
+
+            <com.example.dec.mylocation.customfonts.MavenProButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reject"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/buttonselector1"
+                android:id="@+id/rej"
+                android:layout_weight="1"
+                />
+
+</LinearLayout>
+
+</LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>

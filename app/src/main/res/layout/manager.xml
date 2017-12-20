@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/DeepSkyBlue"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Tracking User "
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="22dp" />
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/spinner2"
+        app:ms_dropdown_max_height="250dp"
+        app:ms_dropdown_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="55dp"
+        app:ms_text_color="@color/Black"
+        app:ms_background_color="@color/spinn"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:ems="10"
+        android:text="please select date"
+        android:textSize="18dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColorHint="@color/primary_text"
+        android:background="@drawable/edit_back"
+        android:textColor="@color/primary_text"
+        android:id="@+id/date"
+
+        />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Track"
+        android:textColor="@color/WhiteSmoke"
+        android:background="@drawable/buttonselector"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"/>
+
+
+</LinearLayout>

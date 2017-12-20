@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container">
+
+ <android.support.v7.widget.CardView
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    app:cardCornerRadius="1dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+
+    >
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+
+         <com.example.dec.mylocation.customfonts.MavenProButton
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="View"
+             android:gravity="center"
+             android:layout_below="@+id/ll1"
+             android:textSize="20dp"
+             android:textStyle="normal"
+             android:textAllCaps="false"
+             android:layout_marginBottom="0dp"
+             android:textColor="@color/WhiteSmoke"
+             android:background="@drawable/buttonselector"
+             android:id="@+id/bview"
+             />
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:id="@+id/ll1"
+             android:padding="15dp"
+             android:layout_alignParentTop="true"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true">
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="10dp"
+                 >
+
+
+                 <com.example.dec.mylocation.customfonts.MavenProTextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Time"
+                     android:layout_marginLeft="15dp"
+                     android:textSize="17dp"
+                     android:layout_weight="1"
+                     android:id="@+id/time"
+                     android:gravity="left"
+                     />
+
+
+
+
+                 <com.example.dec.mylocation.customfonts.MavenProTextView
+                     android:id="@+id/date"
+                     android:layout_width="match_parent"
+                     android:text="Date"
+                     android:layout_height="wrap_content"
+                     android:textSize="17dp"
+                     android:layout_weight="1"
+                     android:gravity="right"
+                     android:layout_marginRight="15dp"
+                     />
+
+             </LinearLayout>
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="20dp"
+                 >
+
+
+              <!--   <com.example.dec.mylocation.customfonts.MavenProTextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Company Name"
+                     android:layout_marginLeft="20dp"
+                     android:textSize="17dp"
+                     />-->
+
+
+                <!-- <com.example.dec.mylocation.customfonts.MavenProTextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text=":"
+                     android:layout_marginLeft="20dp"
+                     android:textSize="17dp"
+                     />-->
+
+
+                 <TextView
+                     android:id="@+id/name"
+                     android:layout_width="match_parent"
+                     android:textColor="#000000"
+                     android:text="yzzzzzzzzzzzzzzz"
+                     android:layout_height="wrap_content"
+                     android:textSize="22dp"
+                     android:gravity="center"
+                     android:textStyle="normal"
+                     />
+
+             </LinearLayout>
+
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="20dp"
+                 >
+
+               <!--  <com.example.dec.mylocation.customfonts.MavenProTextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Contact Person"
+                     android:layout_marginLeft="20dp"
+                     android:textSize="17dp"
+                     />
+
+
+                 <com.example.dec.mylocation.customfonts.MavenProTextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text=":"
+                     android:layout_marginLeft="24dp"
+                     android:textSize="17dp"
+                     />
+
+
+
+                 <com.example.dec.mylocation.customfonts.MavenProTextView
+                     android:id="@+id/address"
+                     android:layout_width="wrap_content"
+                     android:textColor="#2F4F4F"
+                     android:text="yzzzzzzzzzzzzzzz"
+                     android:layout_marginTop="5dp"
+                     android:layout_height="wrap_content"
+                     android:textSize="20dp"
+                     android:layout_marginLeft="20dp"
+
+                     />-->
+
+
+                 <FrameLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     >
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:orientation="vertical"
+
+                         >
+                         <ImageView
+                             android:id="@+id/im1"
+                             android:layout_width="30dp"
+                             android:background="@null"
+                             android:src="@drawable/contacticn"
+                             android:layout_gravity="center_horizontal"
+                             android:layout_height="30dp" />
+
+
+                         <TextView
+                             android:id="@+id/address"
+                             android:layout_width="wrap_content"
+                             android:textColor="#2F4F4F"
+                             android:text="AAAAA"
+                             android:layout_gravity="center_horizontal"
+                             android:layout_height="wrap_content" />
+
+
+
+                     </LinearLayout>
+
+                 </FrameLayout>
+
+
+                 <FrameLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     >
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:orientation="vertical"
+                         >
+
+                         <ImageView
+                             android:id="@+id/im2"
+                             android:background="@null"
+                             android:src="@drawable/product"
+                             android:layout_width="30dp"
+                             android:layout_gravity="center_horizontal"
+                             android:layout_height="30dp"
+                             />
+
+                         <TextView
+                             android:id="@+id/city"
+                             android:layout_width="wrap_content"
+                             android:textColor="#2F4F4F"
+                             android:text="singapur"
+                             android:layout_gravity="center_horizontal"
+                             android:layout_height="wrap_content"
+                             />
+
+                     </LinearLayout>
+                 </FrameLayout>
+
+
+
+
+             </LinearLayout>
+
+
+
+
+            <!-- <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="10dp"
+                 >
+
+                 <com.example.dec.mylocation.customfonts.MavenProTextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Product Name"
+                     android:layout_marginLeft="20dp"
+                     android:textSize="17dp"
+                     />
+
+                 <com.example.dec.mylocation.customfonts.MavenProTextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text=":"
+                     android:layout_marginLeft="32dp"
+                     android:textSize="17dp"
+                     />
+
+                 <com.example.dec.mylocation.customfonts.MavenProTextView
+                     android:id="@+id/city"
+                     android:layout_width="wrap_content"
+                     android:textColor="#2F4F4F"
+                     android:text="yzzzzzzzzzzzzzzz"
+                     android:layout_marginTop="5dp"
+                     android:layout_height="wrap_content"
+                     android:textSize="20dp"
+                     android:layout_marginLeft="20dp"
+                     />
+
+             </LinearLayout>-->
+
+         </LinearLayout>
+
+     </RelativeLayout>
+
+ </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

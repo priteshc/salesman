@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/DeepSkyBlue"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add Visit"
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="22dp" />
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/nxt"
+        android:layout_marginBottom="10dp"
+
+        >
+
+        <android.support.v7.widget.CardView
+            style="@style/card1"
+            app:cardCornerRadius="1dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/card1"
+            android:clickable="true"
+
+            >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:focusableInTouchMode="true"
+                    >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="30dp"
+                            >
+
+                            <com.example.dec.mylocation.customfonts.MavenProTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="select time"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:layout_marginLeft="20dp"
+                                android:id="@+id/tim"
+                                android:textColor="@drawable/press1"
+                                android:textSize="18sp"
+                                />
+
+                            <com.example.dec.mylocation.customfonts.MavenProTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="select date"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:layout_marginRight="20dp"
+                                android:id="@+id/dat"
+                                android:textColor="@drawable/press1"
+                                android:textSize="18sp"
+
+                                />
+
+                        </LinearLayout>
+
+
+
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/purpose"
+                        app:ms_dropdown_max_height="250dp"
+                        app:ms_dropdown_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="25dp"
+                        app:ms_text_color="@color/Black"
+                        app:ms_background_color="@color/spinn"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:focusableInTouchMode="true"
+                    android:id="@+id/ll1"
+                    android:visibility="visible"
+                    >
+
+                    <com.example.dec.mylocation.customfonts.MavenProTextView
+                        android:id="@+id/customer"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/spinn"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Select customer"
+                        android:gravity="center_vertical"
+                        android:textSize="18sp"
+                        android:paddingLeft="25dp"
+                        />
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/contactper"
+                        app:ms_dropdown_max_height="250dp"
+                        app:ms_dropdown_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="15dp"
+                        app:ms_text_color="@color/Black"
+                        app:ms_background_color="@color/spinn"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/productname"
+                        app:ms_dropdown_max_height="250dp"
+                        app:ms_dropdown_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="15dp"
+                        app:ms_text_color="@color/Black"
+                        app:ms_background_color="@color/spinn"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+
+                        />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/ddname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <com.example.dec.mylocation.customfonts.MavenProEditText
+                            android:id="@+id/desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:inputType="textImeMultiLine"
+                            android:maxLines="3"
+                            android:focusableInTouchMode="true"
+                            android:hint="Description"
+                            android:gravity="left|top"
+                            android:maxLength="250"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="15dp"
+                            android:textSize="18sp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/bg_edittext_selector"
+
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/spinner2"
+                        app:ms_dropdown_max_height="250dp"
+                        app:ms_dropdown_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="15dp"
+                        app:ms_text_color="@color/Black"
+                        app:ms_background_color="@color/spinn"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+
+                        >
+
+                        <com.example.dec.mylocation.customfonts.MavenProButton
+
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                             android:text="Follow up date"
+                            android:id="@+id/flwdate"
+                            />
+                        <com.example.dec.mylocation.customfonts.MavenProButton
+
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="Follow up time"
+                            android:id="@+id/flwtime"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/remark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        >
+
+                        <com.example.dec.mylocation.customfonts.MavenProEditText
+                            android:id="@+id/remark1"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:inputType="textImeMultiLine"
+                            android:maxLines="3"
+                            android:focusableInTouchMode="true"
+                            android:hint="Remark"
+                            android:gravity="left|top"
+                            android:maxLength="250"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="15dp"
+                            android:textSize="18sp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/bg_edittext_selector"
+
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal"
+                            >
+
+                            <Button
+                                android:id="@+id/fromtime"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:text="From time"
+
+                                />
+
+                            <Button
+                                android:id="@+id/totime"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="30dp"
+                                android:layout_weight="1"
+                                android:text="To time" />
+
+                        </LinearLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/ddesc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="15dp">
+
+                            <com.example.dec.mylocation.customfonts.MavenProEditText
+                                android:id="@+id/desc1"
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:layout_gravity="bottom"
+                                android:background="@drawable/bg_edittext_selector"
+                                android:focusableInTouchMode="true"
+                                android:gravity="left|top"
+                                android:hint="Description"
+                                android:inputType="textImeMultiLine"
+                                android:maxLength="250"
+                                android:maxLines="3"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="15dp"
+                                android:textSize="18sp"
+
+                                />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+    <com.example.dec.mylocation.customfonts.MavenProButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:id="@id/nxt"
+        android:text="Save"
+        android:textColor="@color/WhiteSmoke"
+        android:background="@drawable/buttonselector"
+
+        />
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
+

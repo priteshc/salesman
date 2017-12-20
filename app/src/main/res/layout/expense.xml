@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/DeepSkyBlue"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add Expense"
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="22dp" />
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_above="@+id/nxt"
+            android:layout_marginBottom="10dp"
+
+            >
+
+            <android.support.v7.widget.CardView
+                style="@style/card1"
+                app:cardCornerRadius="1dp"
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="true"
+                android:id="@+id/card1"
+                android:clickable="true"
+
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:focusableInTouchMode="true"
+                        >
+
+
+                        <com.example.dec.mylocation.customfonts.MavenProTextView
+                            android:id="@+id/date"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="25dp"
+                            android:background="@color/spinn"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="Select visit date"
+                            android:gravity="center_vertical"
+                            android:textSize="18sp"
+                            android:paddingLeft="25dp"
+                            />
+
+
+
+
+
+                        <com.example.dec.mylocation.customfonts.MavenProTextView
+                            android:id="@+id/company"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="25dp"
+                            android:background="@color/spinn"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="Select company"
+                            android:gravity="center_vertical"
+                            android:textSize="18sp"
+                            android:paddingLeft="25dp"
+                            />
+
+
+
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_marginLeft="10dp"
+                          android:layout_marginRight="10dp"
+                          android:layout_marginTop="20dp"
+                          >
+
+                          <com.example.dec.mylocation.customfonts.MavenProTextView
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_weight="1"
+                              android:text="Distance(Km)      :"
+                              android:textSize="16dp"
+
+                          />
+                          <com.example.dec.mylocation.customfonts.MavenProEditText
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_weight="1"
+                              android:hint="km"
+                              android:textSize="18dp"
+                              android:id="@+id/dist"
+                              android:gravity="center"
+
+                              />
+
+                      </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp"
+                            >
+
+                            <com.example.dec.mylocation.customfonts.MavenProTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Amount             :"
+                                android:textSize="16dp"
+                                />
+                            <com.example.dec.mylocation.customfonts.MavenProEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="rupees"
+                                android:textSize="18dp"
+                                android:id="@+id/amount"
+                                android:gravity="center"
+
+
+                                />
+
+                        </LinearLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+
+                            >
+
+                            <com.example.dec.mylocation.customfonts.MavenProEditText
+                                android:id="@+id/desc"
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:inputType="textImeMultiLine"
+                                android:maxLines="3"
+                                android:focusableInTouchMode="true"
+                                android:hint="Description"
+                                android:gravity="left|top"
+                                android:maxLength="250"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="15dp"
+                                android:textSize="18sp"
+                                android:layout_gravity="bottom"
+                                android:background="@drawable/bg_edittext_selector"
+                                />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+        <com.example.dec.mylocation.customfonts.MavenProButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:id="@id/nxt"
+            android:text="Save"
+            android:textColor="@color/WhiteSmoke"
+            android:background="@drawable/buttonselector"
+
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
